@@ -8,7 +8,7 @@ Terraform module to provision a libvirt instance.
 
 ```hcl
 module "instance" {
-  source = "git::https://github.com/tankibaj/libvirt-instnace.git"
+  source = "git::https://github.com/tankibaj/libvirt-instance.git"
 
 }
 ```
@@ -26,7 +26,7 @@ resource "libvirt_network" "this" {
 }
 
 module "instance" {
-  source = "git::https://github.com/tankibaj/libvirt-instnace.git"
+  source = "git::https://github.com/tankibaj/libvirt-instance.git"
 
   name           = "my-instance"
   memory         = 512
@@ -49,7 +49,7 @@ resource "libvirt_network" "this" {
 }
 
 module "instance" {
-  source = "git::https://github.com/tankibaj/libvirt-instnace.git"
+  source = "git::https://github.com/tankibaj/libvirt-instance.git"
 
   count          = 2
   name           = "k8s-node${count.index + 1}"
