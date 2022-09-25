@@ -93,5 +93,9 @@ resource "libvirt_domain" "this" {
     target_type = "virtio"
     target_port = "1"
   }
+  
+  lifecycle {
+    ignore_changes = [network_interface]
+  }
 }
 
