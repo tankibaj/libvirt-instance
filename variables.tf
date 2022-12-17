@@ -59,7 +59,7 @@ variable "volume_size" {
 
 variable "pool_name" {
   description = "Name of pool where all volumes will stored"
-  default     = ""
+  default     = "default"
 }
 
 variable "pool_path" {
