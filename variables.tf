@@ -1,6 +1,5 @@
 variable "name" {
-  description = "Name to be used on EC2 instance created"
-  default     = ""
+  description = "Name to be used on instance created"
 }
 
 variable "memory" {
